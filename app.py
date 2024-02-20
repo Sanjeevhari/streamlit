@@ -26,5 +26,5 @@ def set_background(image_file):
     st.markdown(style, unsafe_allow_html=True)
   
 # Title
-set_background('./bgs/bgn.jpg')
+set_background('./bgs/bg1.jpg')
 st.title("Hi Sanjeev hari !!!")
