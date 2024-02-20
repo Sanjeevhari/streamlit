@@ -7,7 +7,7 @@ import numpy as np
 from util import classify, set_background
   
 # Title
-set_background('./bgs/bg1.jpg')
+#set_background('./bgs/bg1.jpg')
 st.title('Retinal Disease classification')
 
 # set header
