@@ -15,12 +15,3 @@ st.header('Please upload a retinal scan image')
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
-
-# load classifier
-model = load_model('./Modeleye.h5')
-
-
-# display image
-if file is not None:
-    image = Image.open(file).convert('RGB')
-    st.image(image, use_column_width=True)
