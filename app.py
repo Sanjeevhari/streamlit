@@ -17,7 +17,7 @@ st.header('Please upload a retinal scan image')
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
-model = load_model('./Modeleye.h5')
+model = load_model('Modeleye.h5')
 
 # load class names
 with open('./model/labels.txt', 'r') as f:
