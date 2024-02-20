@@ -15,3 +15,4 @@ st.header('Please upload a retinal scan image')
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
+model=load_model()
