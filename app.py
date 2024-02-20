@@ -19,10 +19,6 @@ file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 # load classifier
 model = load_model('./Modeleye.h5')
 
-# load class names
-with open('./model/labels.txt', 'r') as f:
-    class_names = [a[:-1].split(' ')[1] for a in f.readlines()]
-    f.close()
 
 # display image
 if file is not None:
@@ -30,7 +26,7 @@ if file is not None:
     st.image(image, use_column_width=True)
 
     # classify image
-    class_name, conf_score = classify(image, model, class_names)
+    class_name, conf_score = classify(image, model)
 
     # write classification
     st.write("## {}".format(class_name))
